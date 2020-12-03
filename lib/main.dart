@@ -27,100 +27,80 @@ class _HomePageState extends State<HomePage> {
         title: Text('Sounds'),
         centerTitle: true,
       ),
-      body: Column(
+      body: ListView(
         children: [
           FlatButton(
-            onPressed: onPlay1,
+            onPressed: () {
+              AssetsAudioPlayer assetsAudioPlayer = AssetsAudioPlayer();
+              assetsAudioPlayer.open(Audio('song_file/acceleration.mp3'));
+            },
             child: Text('A accelera'),
           ),
           FlatButton(
-            onPressed: onPlay2,
+            onPressed: () {
+              AssetsAudioPlayer assetsAudioPlayer = AssetsAudioPlayer();
+              assetsAudioPlayer.open(Audio('song_file/change.mp3'));
+            },
             child: Text('A schimba'),
           ),
           FlatButton(
-            onPressed: onPlay3,
+            onPressed: () {
+              AssetsAudioPlayer assetsAudioPlayer = AssetsAudioPlayer();
+              assetsAudioPlayer.open(Audio('song_file/choice.mp3'));
+            },
             child: Text('Alegere'),
           ),
           FlatButton(
-            onPressed: onPlay4,
+            onPressed: () {
+              AssetsAudioPlayer assetsAudioPlayer = AssetsAudioPlayer();
+              assetsAudioPlayer.open(Audio('song_file/colors.mp3'));
+            },
             child: Text('Culori'),
           ),
           FlatButton(
-            onPressed: onPlay5,
+            onPressed: () {
+              AssetsAudioPlayer assetsAudioPlayer = AssetsAudioPlayer();
+              assetsAudioPlayer.open(Audio('song_file/contract.mp3'));
+            },
             child: Text('Contract'),
           ),
           FlatButton(
-            onPressed: onPlay6,
+            onPressed: () {
+              AssetsAudioPlayer assetsAudioPlayer = AssetsAudioPlayer();
+              assetsAudioPlayer.open(Audio('song_file/dinner.mp3'));
+            },
             child: Text('Cina'),
           ),
           FlatButton(
-            onPressed: onPlay7,
+            onPressed: () {
+              AssetsAudioPlayer assetsAudioPlayer = AssetsAudioPlayer();
+              assetsAudioPlayer.open(Audio('song_file/documentation.mp3'));
+            },
             child: Text('Documentatie'),
           ),
           FlatButton(
-            onPressed: onPlay8,
+            onPressed: () {
+              AssetsAudioPlayer assetsAudioPlayer = AssetsAudioPlayer();
+              assetsAudioPlayer.open(Audio('song_file/equipment.mp3'));
+            },
             child: Text('Echipament'),
           ),
           FlatButton(
-            onPressed: onPlay9,
+            onPressed: () {
+              AssetsAudioPlayer assetsAudioPlayer = AssetsAudioPlayer();
+              assetsAudioPlayer.open(Audio('song_file/home.mp3'));
+            },
             child: Text('Acasa'),
           ),
           FlatButton(
-            onPressed: onPlay10,
+            onPressed: () {
+              AssetsAudioPlayer assetsAudioPlayer = AssetsAudioPlayer();
+              assetsAudioPlayer.open(Audio('song_file/office.mp3'));
+            },
             child: Text('Birou'),
           ),
         ],
       ),
     );
-  }
-
-  void onPlay1() async {
-    AssetsAudioPlayer assetsAudioPlayer = AssetsAudioPlayer();
-    assetsAudioPlayer.open(Audio('song_file/acceleration.mp3'));
-  }
-
-  void onPlay2() async {
-    AssetsAudioPlayer assetsAudioPlayer = AssetsAudioPlayer();
-    assetsAudioPlayer.open(Audio('song_file/change.mp3'));
-  }
-
-  void onPlay3() async {
-    AssetsAudioPlayer assetsAudioPlayer = AssetsAudioPlayer();
-    assetsAudioPlayer.open(Audio('song_file/choice.mp3'));
-  }
-
-  void onPlay4() async {
-    AssetsAudioPlayer assetsAudioPlayer = AssetsAudioPlayer();
-    assetsAudioPlayer.open(Audio('song_file/colors.mp3'));
-  }
-
-  void onPlay5() async {
-    AssetsAudioPlayer assetsAudioPlayer = AssetsAudioPlayer();
-    assetsAudioPlayer.open(Audio('song_file/contract.mp3'));
-  }
-
-  void onPlay6() async {
-    AssetsAudioPlayer assetsAudioPlayer = AssetsAudioPlayer();
-    assetsAudioPlayer.open(Audio('song_file/dinner.mp3'));
-  }
-
-  void onPlay7() async {
-    AssetsAudioPlayer assetsAudioPlayer = AssetsAudioPlayer();
-    assetsAudioPlayer.open(Audio('song_file/documentation.mp3'));
-  }
-
-  void onPlay8() async {
-    AssetsAudioPlayer assetsAudioPlayer = AssetsAudioPlayer();
-    assetsAudioPlayer.open(Audio('song_file/equipment.mp3'));
-  }
-
-  void onPlay9() async {
-    AssetsAudioPlayer assetsAudioPlayer = AssetsAudioPlayer();
-    assetsAudioPlayer.open(Audio('song_file/home.mp3'));
-  }
-
-  void onPlay10() async {
-    AssetsAudioPlayer assetsAudioPlayer = AssetsAudioPlayer();
-    assetsAudioPlayer.open(Audio('song_file/office.mp3'));
   }
 }
